@@ -1,0 +1,11 @@
+# コマ25と同じ見開きで、貼り紙の位置だけが違う。上部はコマ25と同じ文。
+# ここでは下部（貼り紙をめくった側、線で消された処方）を写す。
+for a Horse that is kicked or
+[del: is very much swelled & any great]
+[del: swelling in horse or Cow except a Cow]
+[del: bagy]
+[del: Take y{e} two Ounces of y{e} Oyle of]
+[del: t4b1cc4 & two Ounces of 719sh716]
+[del: 4552 & two Ounces of y{e} Oyle of]
+[del: bays & mix it together Cold &]
+[del: dress them in y{e} swelled place]

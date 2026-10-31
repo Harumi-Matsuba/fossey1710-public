@@ -2,11 +2,20 @@
 
 Beinecke Rare Book and Manuscript Library, Yale University、GEN MSS VOL 855。
 獣医の処方を記した手帳で、処方の一部が数字まじりの文で書かれている。
-その書き方（鍵）を割り出し、暗号の部分を読む作業の記録。
+その書き方（鍵）を割り出し、暗号の部分を読んだ記録である。
 
-**状態：作業中。** 鍵は割り出し、同じ冊子の平文で裏づけた。暗号の部分の書き起こしは途中で、
-全体の読みはまだ出していない。数字（対照・独立の2回目・意味の通る割合）も出していない。
-ここに置いてあるのは、鍵と、鍵を確かめた箇所と、読み終えた分だけである。
+**状態：部分的な読み。** 暗号の数字が出る 38 コマすべてを書き起こし、鍵で読んだ。
+暗号の記号（数字 1〜9 の出現）3,522 のうち、読みが語として通るのは 3,212（91.2%）。
+残りは、薬材のラテン語名、人名、貼り紙で隠れた所、線で消された所に集まっている（`docs/OPEN.md`）。
+鍵をかき混ぜた 1000 通りの対照では、本物の鍵に並ぶものは 0 回だった。
+
+## 先行との関係
+
+この冊子の暗号は、Daniel Bourdeau の未解決の暗号の目録（項目 818）が 2026年10月28日の時点で
+「母音が数字に置き換えられている。すぐ読める」と記している。**方式の見立ては先にある。**
+ここで足したのは、置き換えられるのが母音だけでなく9字（a e i o u l m n r）であること、
+38 コマ全部の書き起こしと読み、対照、未解決の一覧である。「初めて解いた」とは言わない。
+詳しくは `docs/PRIOR_CHECK.md`。
 
 ## 方式と鍵
 
@@ -17,10 +26,15 @@ Beinecke Rare Book and Manuscript Library, Yale University、GEN MSS VOL 855。
 | a | e | i | o | u | l | m | n | r |
 
 語の区切り・大文字・句読点はそのまま。w は当時の綴りどおり uu と書かれる（b6455 = blouu = blow）。
+数字の 0 は使われない。
+
+**置き換えは一貫していない。** 同じ行の中に、数字を使わずにそのまま書かれた語が混じる
+（例：コマ19「f49 1 h49s2 that 3s p93ck'd」の that、コマ25「18d 1 halfe」の halfe）。
+数えると、暗号のある行で数字を含む語 1,295 に対し、数字を使わない語が 242 ある。
 
 ## 鍵の裏づけ
 
-冊子のコマ 18 に、平文で次の見出しがある。
+コマ 18 に、平文で次の見出しがある。
 
 > for a blow in a horses eye to eat of y[e] Cell
 
@@ -29,7 +43,35 @@ Beinecke Rare Book and Manuscript Library, Yale University、GEN MSS VOL 855。
 > f49 a b6455 38 a h49s2s ey2 → for a blouu in a horses eye
 
 同じ句が、同じ手で、平文と暗号の両方で書かれている。ここから 2=e・3=i・4=o・5=u・6=l・8=n・9=r が決まり、
-続く行の 18d = and、C9217 = Cream で 1=a・7=m が決まる。各値の根拠は `data/key.tsv` に記した。
+続く行の 18d = and、C9217 = Cream で 1=a・7=m が決まる。各値の根拠は `data/key.tsv`。
+
+別の裏づけがコマ 70 にある。この頁は手習いの書き込みで、同じ9字（a e i o u l m n r）だけを並べた表と、
+「Receved of eight men of y{e} first = or : n …」という覚え書きがあり、字が数の代わりに使われている。
+鍵が当てる9字と、この頁に並ぶ9字は同じである。
+
+## 読んだもの（例）
+
+- コマ 36：`1s y45 sh166 th38k fit b21t 3t 38t4 529y f382 p45d29`
+  → as you shall think fit beat it into uery fine pouder（蜂蜜と石灰の粉の作り方）
+- コマ 21：`a 72d3c82 f49 the B3t2 4f 1 71d D4g`
+  → a medicne for the Bite of a mad Dog（狂犬に咬まれたときの薬）
+- コマ 25：`S3x b5ſh26 of 716t: w366 B9255 f459 h4gsh21d of S7166 B229`
+  → Six bushel of malt: will Breuu four hogshead of Small Beer（麦芽6ブッシェルの醸造量）
+- コマ 56：`C94c5572t26 4957`（Crocus Metallorum）、`D31p28t52`（Diapente）など、当時の薬材の名
+
+全文は `data/transcription/`（書き起こし）と `data/reading/`（鍵で読んだ文）にコマごとに置いた。
+
+## 数字
+
+| 項目 | 値 |
+|---|---|
+| 暗号の数字が出るコマ | 38（うち 36 コマを書き起こし。残り2コマは、同じ紙を貼り紙の位置だけ変えて撮った重複） |
+| 書き起こした行 | 652 |
+| 暗号の記号（数字の出現） | 3,522 |
+| 読みが語として通る記号 | 3,212（91.2%） |
+| 対照（鍵をかき混ぜた1000通り） | 本物以上 0 回（本物 93.7%、かき混ぜの最大 55.5%） |
+| 較正 | なし（当時の解読文も刊本もない。理由は `docs/METHOD.md`） |
+| 独立の2回目との一致 | `docs/VERIFICATION.md` |
 
 ## 人の確認
 
@@ -38,17 +80,20 @@ Beinecke Rare Book and Manuscript Library, Yale University、GEN MSS VOL 855。
 
 ## AI の使用
 
-資料の探索、画像の取得、書き起こし、鍵の割り出し、この文書の作成は AI（Anthropic Claude）が行った。
+資料の探索、画像の取得、書き起こし、鍵の割り出し、対照、この文書の作成は AI（Anthropic Claude）が行った。
+別の読み手として OpenAI の Codex CLI にも同じ画像を読ませた（`docs/VERIFICATION.md`）。
 人が行ったのは、作業の指示と公開の判断である。
 
 ## 中身
 
 - `data/key.tsv` — 鍵と、値ごとの根拠。
-- `src/decode.py` — 書き起こしを読むための短いプログラム。
-- `tests/` — `python3 -m unittest discover -s tests` で通る。
-- `docs/METHOD.md` — 方法と限界。
-- `docs/OPEN.md` — 未解決の一覧。
-- `docs/PRIOR_CHECK.md` — 先行の調べ。
+- `data/transcription/` — コマごとの書き起こし。`data/reading/` — それを鍵で読んだ文。
+- `data/verified.tsv`・`data/verified_auto.tsv` — 原寸画像で字を確かめて直した箇所の一覧。
+- `data/g9.tsv` — 数字の 9 と文字の g が同じ形で書かれるため、語になる方を採った箇所の一覧。
+- `data/materia.txt` — 現代の辞書にない当時の綴り・薬材名と、その根拠。
+- `controls/` — 鍵をかき混ぜた対照と、意味の通る割合の計算結果。
+- `src/` — 読みと計測のプログラム。
+- `docs/METHOD.md` — 方法と限界。`docs/OPEN.md` — 未解決。`docs/PRIOR_CHECK.md` — 先行の調べ。
 - `SOURCES.md` — 資料。
 
 英語版は `README.en.md` など `*.en.md`。

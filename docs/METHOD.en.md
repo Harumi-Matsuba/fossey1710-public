@@ -2,40 +2,71 @@
 
 ## 1. Choosing the item
 
-From Daniel Bourdeau's catalogue of unsolved ciphers (849 entries), items were taken
-whose images are public, which need no visit to the archive, and which nobody has
-worked on. Entry 818 (Fossey's notebook) is one of them. The search for earlier
-readings is in `PRIOR_CHECK.en.md`.
+From Daniel Bourdeau's catalogue of unsolved ciphers we took an item whose images are public,
+which needs no visit to the repository, and on which nobody had published a reading.
+Item 818 (Fossey's notebook) is one. Prior art: `PRIOR_CHECK.en.md`.
 
 ## 2. Images
 
-Fetched from Yale's public IIIF endpoint without an account. All 76 images were first
-taken at 800 px wide to find the enciphered pages; those pages were then taken again at
-1600 px, and the page that proves the key also at full size (3885 px on the long side).
-Two seconds were left between requests. No image is reproduced in this repository.
+Fetched from Yale's public IIIF endpoint without an account. All 76 images were first taken at
+800px wide to find the pages with cipher; the 38 that carry cipher digits were then taken at
+2000px and at full size (longest side about 2,900–3,900px). Two seconds between requests.
+No images are kept in this repository.
 
 ## 3. Recovering the key
 
-Only the digits 1–9 occur; 0 never does. The digits stand inside otherwise English
-words, so they are letters. The heading on image 18 and the second line of cipher on
-image 19 are the same phrase, which fixes seven values at once; the next two words fix
-the remaining two. The evidence for each value is in `data/key.tsv`.
+Only the digits 1–9 occur, never 0. Digits sit inside otherwise ordinary English, so they stand
+for letters. The plain heading on image 18 and the second cipher line of image 19 are the same
+phrase, which fixes seven values; the next two words fix the rest. See `../data/key.tsv`.
 
-There is no 0 because the nine digits were given to nine letters; quantities in the
-recipes ("one ounce") are spelled out.
+## 4. Transcription conventions (the shapes of this hand)
 
-## 4. Transcription
+- **The digit 9 and the letter g are written alike.** They cannot be told apart by shape, so the
+  reading that makes a word was taken. The 12 places are listed in `../data/g9.tsv`.
+- **The letter d and a figure 0 look alike.** The notebook never uses 0 (quantities are spelled
+  out). Checked at full resolution, e.g. p.41 "p458d" = pound, p.62 "1882s22d" = anneseed.
+- **The digit 1 (= a) and the long s (ſ) are similar.** 1 is a short slanted stroke; the long s is
+  tall. They were separated at full resolution, e.g. p.25 "b5ſh26" = bushel.
+- **q and g are similar.** Where the word must be quart or quarton, the glyph was compared at full
+  resolution with the plain-text "quarton" on the same page (p.60) and transcribed as q.
+- **The substitution is not consistent**: words written out in full occur inside cipher lines
+  (1,295 words with digits against 242 without). They are left as written.
+- Struck-through text is transcribed and counted as cipher. Text hidden under a pasted slip is
+  marked `[...]` and not counted.
 
-Each line is cropped from the page image and copied one character at a time. In this
-hand the digit 1 and the long s, 9 and the long s, and 2 and 1 are easily confused.
-Doubtful characters are written as ? and resolved by taking the reading that gives an
-English word; those places are marked in the reading files.
+## 5. How corrections were handled
 
-## 5. Limits
+After the first transcription, every cipher word whose decoding was not a word was given candidate
+re-readings by swapping the shapes this hand confuses, keeping only those that produce exactly one
+word. **A candidate was accepted only when the full-resolution image showed it.** The results are in
+`../data/verified_auto.tsv`: of 35 candidates, 7 forms (10 places) were accepted and the rest were
+rejected because the image disagreed — for example the candidate that would turn T91c62 into
+"Treacle" was rejected because the image reads T91c62 (a period spelling of treacle).
+Differences against the second reader were treated the same way (`../data/verified.tsv`).
 
-- No person has checked this transcription.
-- The spelling is of its time and many words are not in a modern word list (uu for w,
-  ck for k, a final e added or dropped). Any count of words that make sense must allow
-  for this.
-- The transcription is not finished, so no controls, no independent second transcription
-  and no share of signs that give sense are offered yet.
+## 6. How the share of meaningful symbols is measured
+
+Of the cipher symbols (occurrences of 1–9), the share that falls in words whose decoding is a word
+(`../src/ratio.py`). A word is checked against an English dictionary
+(/usr/share/dict/words) plus the spellings that occur in the notebook's own plain-text pages
+(`../data/plain_vocab.txt`) and a list of period drug and measure names
+(`../data/materia.txt`, each with its evidence). Words broken across a line are joined.
+
+## 7. Control
+
+The key (1–9 → a e i o u l m n r) was shuffled 1,000 times and the same share measured
+(`../src/control.py`). Against the real key's 93.7% (of words containing digits), the best shuffle
+reached 55.5% and none reached the real key.
+
+## 8. Calibration
+
+None is possible: the notebook carries no contemporary decipherment and there is no printed
+edition or translation (`PRIOR_CHECK.en.md`). Instead the notebook's own plain-text pages, which use
+the same words (bole armery, varges, warter), were used as the standard for spelling.
+
+## 9. Limits
+
+- No human has checked this transcription.
+- The spelling is of its period and many words are not in a modern dictionary; the judgement of
+  "makes sense" depends on the vocabulary described above.
+- Pasted slips cover part of the text on one opening; the hidden lines cannot be read (`OPEN.en.md`).

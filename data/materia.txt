@@ -1,0 +1,70 @@
+# 当時の薬材・処方の語で、綴りをそのままでは現代の辞書にないもの。
+# 根拠の区分：[N] この手帳の平文の頁に同じ綴りで出る／[M] 当時の獣医・薬の書で普通に使う名
+elecampane	[M] Inula helenium の英名（Elecompain/Elecompane と綴る）
+liquorish	[M] liquorice の当時の綴り（Lickrish/Lickgish）
+turmerick	[M] turmeric の当時の綴り
+diapente	[M] 馬の薬「ディアペンテ」（五味の散薬）。Diapenty/Diapentie とも
+crocus	[M] Crocus Metallorum（硫化アンチモン剤）の第1語
+metallorum	[M] 同上の第2語
+gromwell	[M] Lithospermum（Gromel と綴る）
+mayweed	[M] Anthemis cotula
+featherfew	[M] feverfew の当時の綴り（fetherfew）
+smallage	[M] Apium graveolens
+hartstongue	[M] Asplenium scolopendrium（Dearstongue/Hartstongue）
+bole	[N] bole armery（赤土の止血薬）。手帳の平文に「bole armery」
+armery	[N] 同上
+verjuice	[N] 手帳の平文は Varges
+hogshead	[M] 樽の単位
+kilderkin	[M] 樽の単位（Kilkin と綴る）
+quarton	[N] 手帳の平文に「quarton of」。quart の指小形とみられる
+peneworth	[N] pennyworth の当時の綴り
+northoyle	[M] 北方（ノルウェー）産の油。手帳では S472 849th4y6
+spaven	[M] spavin（馬の飛節の腫れ）の当時の綴り
+rowell	[M] 馬に膿を出させる処置（rowel）
+garget	[N] 牛の乳房炎。手帳の平文に Gargete
+scowers	[N] 下痢。手帳の平文に Scowers
+vitriol	[M] 硫酸塩。手帳では Roman 53tt29y
+# 以下は、原寸画像で字を確かめたうえで採った、この手帳の綴り（括弧内は今の語）
+lickrish	[N] 画像で確認（コマ62 下段・コマ59）：63ck93sh（liquorice）
+elecompain	[N] 画像で確認（コマ63 4行目）：E62c47p138（elecampane）
+termerick	[N] 画像で確認（コマ59 4行目）：T29729 3ck（turmeric）
+anneseed	[N] 画像で確認（コマ62 4行目）：1882s22d（aniseed）
+diapenty	[N] コマ62・61（Diapente の異綴り）
+strongue	[N] コマ41で字を確認（St948g52）。strong の綴り
+medicne	[N] コマ21で字を確認（72d3c82）。medicine の綴り。平文には medcin・medcen
+sponfull	[N] spoonful の綴り（Sp48f566）
+gromel	[M] gromwell（Lithospermum）の当時の名
+plantan	[M] plantain の当時の綴り
+trickell	[N] コマ64で字を確認（T93ck.ell）。treacle の綴り。ほかに Traicle・Tracle
+fetherfue	[N] コマ60で字を確認。featherfew（feverfew）の綴り
+boalamery	[N] コマ19で字を確認（B4161729y）。bole armery（bole armeniac）を1語に書いたもの
+armmaniack	[N] コマ34で字を確認（B462 19771 83ck＝Bole armmaniack）
+diapentue	[N] コマ61で字を確認（D31p28t52）。Diapente の綴り。同じ手帳に Diapenty・Diapentis もある
+macherye	[N] コマ32（71ch29y2）。水銀剤 mercury とみられるが未確定
+bolarmery	[N] コマ19で字を確認（B4619729y）。bole armery を1語に書いたもの
+terpentine	[N] コマ19で字を確認（T29p28t382）。turpentine の綴り。ほかに Turpetine
+eldern	[M] elder（ニワトコ）の当時の名
+boylin	[N] boiling の綴り
+amory	[N] コマ25・31（B462 1749y）。bole armeniac を指す語。私の読みと Codex の1回目が同じ字を読んだ
+vitteril	[N] コマ40で字を確認（53tt2936）。vitriol（硫酸塩）の綴り
+vittery	[N] コマ65・66（53tt29y）。同じく vitriol の綴り
+# 以下は綴りの違いだけで、語としては明らかなもの（画像で字は確かめていないものを含む。印は docs の一覧に書く）
+hoggshead	[N] hogshead（樽）。コマ25で gg を画像で確認
+london	[N] 地名 London
+kilekin	[N] kilderkin（樽）の綴り（コマ25）
+triacle	[N] treacle の綴り（コマ41・43）
+bayberieu	[N] bayberries の綴り（コマ47）
+houuelick	[N] houseleek（ベンケイソウ）の綴り（コマ49）
+plantern	[N] plantain の綴り（コマ49）
+camayile	[N] camomile の綴り（コマ49）
+peneuuogeth	[N] pennyworth の綴り（コマ55）
+tracle	[N] コマ21で字を確認（T91c62）。treacle の綴り
+disolue	[N] コマ21で字を確認（d3s4652）。dissolve の綴り
+sufice	[N] コマ36で字を確認（s5f3c2）。suffice の綴り
+fetherfeuu	[N] コマ45で字を確認。featherfew（feverfew）の綴り
+dispenty	[N] コマ47で字を確認。Diapente の綴り
+saffin	[N] コマ47で字を確認。saffron の綴り
+warter	[N] 平文の頁（コマ65・66）に同じ綴り。water
+peneuuorth	[N] pennyworth の綴り
+fenel	[N] コマ60。fennel の綴り
+sage	[N] コマ54で字を確認（S1g2）
