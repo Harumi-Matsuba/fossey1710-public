@@ -4,6 +4,21 @@ As of 1 November 2026. Of 3,490 cipher symbols, 131 (3.8%, 31 distinct forms) fa
 not read as words. The full list is in `open_tokens.tsv` (image, as written, decoded, symbol count).
 The main ones:
 
+## 0. The one page whose reading is not published: image 70
+
+This is not a recipe but a page of practice writing — names (William, Thomas Fossey), figures, and a
+table of the nine letters. Its columns interleave, and the first reader and the independent second
+reader copied them out in different orders, so they agree on only 69.1% of it; the other 35 images
+run from 76.8% to 98.0%. A page that agrees that poorly does not get its reading published here, so
+only the transcription (`../data/transcription/p70.txt`) is kept and the reading is treated as
+unresolved.
+
+The page does carry two things that support the key: 55366317 (uuilliam = William), and a table
+reading a l m n r / a e u e a / … Its sum under "Receved of eight men" does not balance: the figures
+as written come to 3,665 against a stated total of 3,965, a difference of 300. Seven single-character
+corrections would make it balance and nothing decides between them, so the sum is not used as
+evidence for the key.
+
 ## 1. Names of drugs and preparations
 
 | As written | Decoded | Image | Guess |

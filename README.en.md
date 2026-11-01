@@ -4,8 +4,10 @@ Beinecke Rare Book and Manuscript Library, Yale University, GEN MSS VOL 855.
 A notebook of farm and veterinary remedies in which parts of the recipes are written
 with digits mixed into the English. This repository records the key and the reading.
 
-**Status: a partial reading.** All 38 images that carry cipher digits have been transcribed
-and read with the key. Of the 3,490 cipher symbols (occurrences of the digits 1–9),
+**Status: a partial reading.** All 38 images that carry cipher digits have been transcribed, and
+the reading of 35 of them is published. The one image left out (70, a page of practice scribbles
+rather than a recipe) is withheld because the independent second reader agreed with only 69.1% of
+it. Of the 3,490 cipher symbols (occurrences of the digits 1–9),
 3,359 (**96.2%**) fall in words that make sense. That figure includes the thirteen places where the
 digit 9 and the letter g are written alike and the reading that makes a word was taken
 (listed in `data/g9.tsv`); without that step the count is 3,334 of 3,495 (95.4%). What is left is concentrated in Latin drug
@@ -76,7 +78,8 @@ The whole text is in `data/transcription/` (as written) and `data/reading/` (dec
 | Symbols in words that make sense | 3,359 (96.2%); 3,334 of 3,495 (95.4%) without the 9/g step |
 | Control (1,000 shuffled keys) | 0 reached the real key (real 96.8%, best shuffle 55.9%) |
 | Calibration | none available; no contemporary decipherment or printed edition exists (`docs/METHOD.en.md`) |
-| Agreement with an independent second reading | `docs/VERIFICATION.en.md` |
+| Agreement with an independent second reading | 90.3% over 36 images, 90.8% over the 35 whose reading is published (69.1–98.0% per image); see `docs/VERIFICATION.en.md` |
+| The 35 published images alone | 3,339 of 3,458 symbols (96.6%) in words that make sense; 3,314 of 3,463 (95.7%) without the 9/g step |
 
 ## Human checking
 
