@@ -21,6 +21,8 @@ other file.
 | R2 | same | 17 (stopped by a usage limit) | comparison (below) |
 | S2 | Anthropic Claude Sonnet | 36 | **independent second reading, reader A** |
 | R3 | OpenAI Codex CLI (gpt-6-astra, reasoning high) | 35 (image 70 lost to a usage limit) | **independent second reading, reader B** |
+| C2 | Anthropic Claude Sonnet | image 70 only | **second reading of image 70, with the column rule** |
+| C3 | Anthropic Claude Fable | image 70 only | the same |
 
 Two second readings were taken against the corrected transcription, by readers from different
 families (S2 and R3). Both sets of figures are given below; the lowest is the one the judgement
@@ -64,28 +66,24 @@ times, each run given only the images it was to read. The run logs were examined
 
 | Scope | Characters in reading 1 | Matched | Share |
 |---|---|---|---|
-| All 36 images | 12,470 | 11,259 | **90.3%** |
+| All 36 images | 12,465 | 11,249 | **90.2%** |
 | The 35 images whose reading is published (image 70 excluded) | 12,201 | 11,073 | **90.8%** |
-| Lines covered by a pasted slip excluded (36 images) | 12,345 | 11,150 | 90.3% |
+| Lines covered by a pasted slip excluded (36 images) | 12,340 | 11,140 | 90.3% |
 
-Per image the range is 69.1% (image 70) to 98.0% (image 56); among the 35 published readings the
-lowest is 76.8% (image 51).
+Per image the range is 66.7% (image 70 — see "Measuring a page laid out in columns" below) to 98.0%
+(image 56); setting image 70 aside, the lowest is 76.8% (image 51).
 
 ### The pages that agree least
 
-- **Image 70 (69.1%): its reading is not published.** It is not a recipe but a page of practice
-  scribbles — names, figures, a table of letters. The low figure is not an artefact of reading
-  order: permuting the blocks every possible way gives 69.9%, ignoring line order gives 69.9%, and
-  **the two readers that never saw the first reading agree with each other on only 72.5%.** This
-  one page was also read by a third model from a different maker again (Fable,
-  `../second/fable/f70.txt`), which agrees with the first reading on 65.1% (70.6% ignoring order) —
-  still below the bar. The reading is withheld and listed in `OPEN.en.md`; the transcription stays
-  in `../data/transcription/p70.txt`.
+- **Image 70: see "Measuring a page laid out in columns" below.** Under the first instruction sheet
+  it came to 66.7%, but the gap was not a disagreement about letters — it was a disagreement about
+  which way to walk the columns. With one line added to the sheet, the same models give 87.5% and
+  89.0%, and the reading is published.
 - **Image 31 (69.9%): its reading is published.** This page carries a note written vertically in the
   left margin. The first transcription puts it last, the second puts it first. **That is a
   difference of placement, not of reading**: align the marginal block and the same comparison gives
   90.9%. Both figures are given here.
-- Next lowest are image 51 (76.8%), 53 (79.1%) and 54 (86.1%), all pages heavy with struck-through
+- Setting image 70 aside, the next lowest are image 51 (76.8%), 53 (79.1%) and 54 (86.1%), all pages heavy with struck-through
   lines and ink bleed. Their readings are published; the symbols that remain doubtful are listed in
   `OPEN.en.md`.
 
@@ -118,13 +116,51 @@ the slip-covered lines excluded, image 25 gives 74.6% and the lowest page become
 
 ### The two readers side by side
 
-| | S2 (Claude Sonnet) | R3 (Codex) |
+| | Claude Sonnet | OpenAI Codex |
 |---|---|---|
-| The 35 published images | 90.8% | 91.3% |
+| The 35 images other than 70 | 90.8% | 91.3% |
 | Slip-covered lines excluded | 90.3% (36 images) | 92.1% (35 images) |
-| All 36 images | 90.3% | (image 70 not returned) |
+| All 36 images (image 70 from the column-rule run) | **90.7%** | still to be taken |
 
-**The figure the judgement rests on is the lowest of these, 90.3%.**
+**The figure the judgement rests on is the lowest of these, 90.7%.** For comparison, keeping image
+70 at its first-sheet run instead gives 90.2% (11,249 of 12,465); either way the figure stays above 90%.
+
+## Measuring a page laid out in columns (image 70)
+
+Image 70 is not a recipe. It is a page of practice writing — names, strings of figures, a table of
+single letters — set down **in two columns**. The first instruction sheet said only "one manuscript
+line per output line, top to bottom", so one reader took the left column from top to bottom and
+then moved to the right, while another read across the two. **Two readers can agree on every letter
+and still score badly**, because the strings are then aligned in different orders. That, and not a
+disagreement about letters, is what the 66.7% was.
+
+One line was therefore added to the sheet (`../second/PROMPT_columns.md`) and the page was taken
+again, **with the same models and the same image**:
+
+> If the page is laid out in two or more columns side by side, do not read across them. Transcribe
+> each column in full, top to bottom, beginning with the leftmost, and output a line containing
+> only === between one column and the next.
+
+The first transcription was reordered to the same convention. **Not one character was changed**: the
+characters before and after were counted and compared — none added, and the only ones removed were
+the five that made up a working note which had never been part of the manuscript.
+
+| Reader | First sheet | With the column rule |
+|---|---|---|
+| Claude Sonnet | 66.7% | **87.5%** (`../second/columns/sonnet/f70.txt`) |
+| Claude Fable | 62.1% | **89.0%** (`../second/columns/fable/f70.txt`) |
+| OpenAI Codex | (lost to a usage limit) | still to be taken |
+
+Changing the model did not help under the first sheet (62.1%); changing one line of the sheet took
+the same model to 89.0%.
+
+The two runs made under the first sheet are recorded here but are not used for the judgement: their
+disagreement is what prompted the reordering and the removal of the working note, so they are no
+longer independent, exactly as R1 and R2 are not. The judgement rests on C2 and C3, taken after the
+first reading was put right.
+
+The defect those runs exposed — a working note written on one line of image 70 and counted as five
+characters of transcription — was searched for across all 36 images; there is no other instance.
 
 ## How agreement is counted
 
@@ -137,9 +173,10 @@ agreement.
 Every figure given here can be recomputed from the files in this repository:
 
 ```
-python3 src/agreement.py second/sonnet      # 90.3% over 36 images
+python3 src/agreement.py second/sonnet      # 90.2% over 36 images (image 70 from the first sheet)
 python3 src/agreement.py second/codex       # 91.3% over 35 images
-python3 src/agreement.py second/fable p70   # 65.1%, image 70 alone
+python3 src/agreement.py second/columns/sonnet p70   # 87.5%, image 70 alone
+python3 src/agreement.py second/columns/fable p70    # 89.0%, image 70 alone
 ```
 
 The script prints both the figure that keeps the written order and the figure that ignores line

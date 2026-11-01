@@ -4,41 +4,6 @@ As of 1 November 2026. Of 3,490 cipher symbols, 131 (3.8%, 31 distinct forms) fa
 not read as words. The full list is in `open_tokens.tsv` (image, as written, decoded, symbol count).
 The main ones:
 
-## 0. The one page whose reading is not published: image 70
-
-This is not a recipe but a page of practice writing — names (William, Thomas Fossey), figures, and a
-table of the nine letters. The first reading and the independent second reading (Claude Sonnet)
-agree on only 69.1% of it; the other 35 images run from 76.8% to 98.0%.
-
-**The cause is not that the two readers wrote the columns down in different orders; it is that the
-page itself cannot be read reliably.** Three measurements show this.
-
-1. Permuting the blocks of the first reading every possible way and keeping the best order raises
-   the figure only from 69.1% to 69.9%.
-2. Ignoring line order altogether (pairing each line of the first reading one-to-one with its best
-   match in the second) gives 69.9% as well.
-3. **Set the two readers that never saw the first reading against each other, and they agree on
-   only 72.5%.** This page carries almost no running text for the readings to brace each other
-   against — only bare strings of digits and a table of single letters — so a different reader
-   produces different characters.
-
-This one page was also given to a third model, by a maker different from both the first reader
-(Opus) and the second (Sonnet) — `../second/fable/f70.txt`. It agrees with the first reading on
-65.1% (70.6% ignoring order), again below the bar. Codex hit a usage limit on this one image and
-returned nothing for it.
-
-A page that agrees that poorly does not get its reading published here, so only the transcription
-(`../data/transcription/p70.txt`) is kept and the reading is treated as unresolved. The first
-transcription has not been corrected either: correcting it would cost the two second readings their
-independence for this page. For the record, the second row of the letter table is written
-`a e u e a` in the first reading and `a o 4 e a` by both of the other readers.
-
-The page does carry two things that support the key: 55366317 (uuilliam = William), and a table
-reading a l m n r / a e u e a / … Its sum under "Receved of eight men" does not balance: the figures
-as written come to 3,665 against a stated total of 3,965, a difference of 300. Seven single-character
-corrections would make it balance and nothing decides between them, so the sum is not used as
-evidence for the key.
-
 ## 1. Names of drugs and preparations
 
 | As written | Decoded | Image | Guess |
@@ -69,6 +34,10 @@ evidence for the key.
 - `11573262` on image 70 is the third line of practice at writing William in digits; the first two
   lines read 55366317 (uuilliam).
 - `38g92st` and `t5553gs` (image 32) and `1182` (image 51) are inside struck-through lines.
+- The sum under "Receved of eight men" on image 70 does not balance: the figures as written come to
+  3,665 against a stated total of 3,965, a difference of 300. Seven single-character corrections
+  would make it balance and nothing decides between them, so the sum is not used as evidence for
+  the key. Two lines on the same page are struck through past reading.
 
 ## 4. Hidden under pasted slips
 

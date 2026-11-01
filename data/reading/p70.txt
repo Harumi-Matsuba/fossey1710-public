@@ -1,5 +1,34 @@
-# コマ70 の読みは公開しない。
-# この頁は処方ではなく、名前・数字・字の表を書きつけた練習書きで、
-# 独立の2回目の読み手との一致が 69.1% にとどまった（ほかの35コマは 76.8〜98.0%）。
-# 一致がこの水準の頁は、読みを載せずに未解決として扱う決まりにしている。
-# 書き起こし（data/transcription/p70.txt）と、食い違いの中身は docs/OPEN.md にある。
+# 練習書き・覚え書きの頁。処方ではない。二段組みなので、左の段を上から下まで、次に右の段を上から下まで写す。
+# 左の段
+William
+William
+{.uuilliam}
+# 次の行は字が薄く、読み取りに自信がない。
+{.uuillia m}
+{aaumiele o}
+io u
+ln i l
+[del: ?] [del: ?]
+a l m n r
+a e u e a
+m l u e r
+r m l / r a o / u e m / l u e / r a i / u l m n
+===
+# 右の段
+Feniel Water
+William & Feniel
+and my hand
+rit this Thomas Fossey
+r a o u
+e a m l
+u e r a
+e o e u o
+---
+Receved of eight men of y{e} first = or : n
+of y{e} second = uo : a
+of y{e} third = ol : m
+of y{e} forth = eu : l
+of y{e} fifth = no : r
+of y{e} sixth = re : u
+of y{e} seventh = oe : r
+y{e} Total = ill : u

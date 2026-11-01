@@ -1,20 +1,24 @@
-# 練習書き・覚え書きの頁。処方ではない。
+# 練習書き・覚え書きの頁。処方ではない。二段組みなので、左の段を上から下まで、次に右の段を上から下まで写す。
+# 左の段
 William
 William
 {.55366317}
+# 次の行は字が薄く、読み取りに自信がない。
 {.5536631 7}
-{11573262 4}  # 読み取れず（?）
+{11573262 4}
 34 5
 68 3 6
+[del: ?] [del: ?]
+a l m n r
+a e u e a
+m l u e r
+r m l / r a o / u e m / l u e / r a i / u l m n
+===
+# 右の段
 Feniel Water
 William & Feniel
 and my hand
 rit this Thomas Fossey
-# 字を並べた表（左の列）
-a l m n r
-a e u e a
-m l u e r
----
 r a o u
 e a m l
 u e r a
@@ -28,5 +32,3 @@ of y{e} fifth = no : r
 of y{e} sixth = re : u
 of y{e} seventh = oe : r
 y{e} Total = ill : u
-# 左下の列
-r m l / r a o / u e m / l u e / r a i / u l m n
