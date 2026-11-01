@@ -76,7 +76,7 @@ The whole text is in `data/transcription/` (as written) and `data/reading/` (dec
 | Symbols in words that make sense | 3,359 (96.2%); 3,332 of 3,492 (95.4%) without the 9/g step |
 | Control (1,000 shuffled keys) | 0 reached the real key (real 96.8%, best shuffle 55.9%) |
 | Calibration | none available; no contemporary decipherment or printed edition exists (`docs/METHOD.en.md`) |
-| Agreement with an independent second reading | 90.7% over all 36 images (Claude Sonnet); 91.3% over 35 (OpenAI Codex, the last image still to be taken). The lowest page is 70.6%. Every run's figure is given in `docs/VERIFICATION.en.md` |
+| Agreement with an independent second reading | 90.7% over all 36 images (Claude Sonnet) and 91.3% (OpenAI Codex). The lowest page is 70.6%. Every run's figure is given in `docs/VERIFICATION.en.md` |
 
 ## Human checking
 

@@ -23,6 +23,7 @@ other file.
 | R3 | OpenAI Codex CLI (gpt-6-astra, reasoning high) | 35 (image 70 lost to a usage limit) | **independent second reading, reader B** |
 | C2 | Anthropic Claude Sonnet | image 70 only | **second reading of image 70, with the column rule** |
 | C3 | Anthropic Claude Fable | image 70 only | the same |
+| C1 | OpenAI Codex CLI (gpt-6-astra, reasoning high) | image 70 only | the same (taken later, once the R3 limit had lifted) |
 
 Two second readings were taken against the corrected transcription, by readers from different
 families (S2 and R3). Both sets of figures are given below; the lowest is the one the judgement
@@ -101,7 +102,9 @@ been unreadable.
 The same instruction sheet and the same delivery (one page image per call) were given to the OpenAI
 Codex CLI for the same 36 images (its transcriptions are in `../second/codex/`). Image 70 was lost
 to a Codex usage limit ("try again at 10:33 PM"), so **the 35 images it did return are exactly the
-35 whose reading is published.** The runs were made in a read-only ephemeral sandbox, and the run
+35 whose reading is published.** Image 70 was taken afterwards, once the limit had lifted, under the
+same delivery and the instruction sheet with the column rule added (C1, below). The runs were made
+in a read-only ephemeral sandbox, and the run
 logs were examined: no run used a shell (`command_execution`, 0 occurrences).
 
 | Scope | Characters in reading 1 | Matched | Share |
@@ -120,7 +123,7 @@ the slip-covered lines excluded, image 25 gives 74.6% and the lowest page become
 |---|---|---|
 | The 35 images other than 70 | 90.8% | 91.3% |
 | Slip-covered lines excluded | 90.3% (36 images) | 92.1% (35 images) |
-| All 36 images (image 70 from the column-rule run) | **90.7%** | still to be taken |
+| All 36 images (image 70 from the column-rule run) | **90.7%** | **91.3%** (11,379 of 12,465) |
 
 **The figure the judgement rests on is the lowest of these, 90.7%.** For comparison, keeping image
 70 at its first-sheet run instead gives 90.2% (11,249 of 12,465); either way the figure stays above 90%.
@@ -149,10 +152,11 @@ the five that made up a working note which had never been part of the manuscript
 |---|---|---|
 | Claude Sonnet | 66.7% | **87.5%** (`../second/columns/sonnet/f70.txt`) |
 | Claude Fable | 62.1% | **89.0%** (`../second/columns/fable/f70.txt`) |
-| OpenAI Codex | (lost to a usage limit) | still to be taken |
+| OpenAI Codex | (lost to a usage limit) | **91.7%** (`../second/columns/codex/f70.txt`) |
 
 Changing the model did not help under the first sheet (62.1%); changing one line of the sheet took
-the same model to 89.0%.
+the same model to 89.0%. Under the sheet with the column rule, three readers of different lineage
+cluster at 87.5%, 89.0% and 91.7%. The figure this page is judged on is the lowest of them, 87.5%.
 
 The two runs made under the first sheet are recorded here but are not used for the judgement: their
 disagreement is what prompted the reordering and the removal of the working note, so they are no
@@ -177,6 +181,7 @@ python3 src/agreement.py second/sonnet      # 90.2% over 36 images (image 70 fro
 python3 src/agreement.py second/codex       # 91.3% over 35 images
 python3 src/agreement.py second/columns/sonnet p70   # 87.5%, image 70 alone
 python3 src/agreement.py second/columns/fable p70    # 89.0%, image 70 alone
+python3 src/agreement.py second/columns/codex p70    # 91.7%, image 70 alone
 ```
 
 The script prints both the figure that keeps the written order and the figure that ignores line

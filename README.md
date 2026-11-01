@@ -73,7 +73,7 @@ Beinecke Rare Book and Manuscript Library, Yale University、GEN MSS VOL 855。
 | 読みが語として通る記号 | 3,359（96.2%）。9 と g の読み分けをしない場合は 3,332 / 3,492（95.4%） |
 | 対照（鍵をかき混ぜた1000通り） | 本物以上 0 回（本物 96.8%、かき混ぜの最大 55.9%） |
 | 較正 | なし（当時の解読文も刊本もない。理由は `docs/METHOD.md`） |
-| 独立の2回目との一致 | 36 コマで 90.7%（Claude Sonnet）、35 コマで 91.3%（OpenAI Codex。残り1コマは取得待ち）。頁ごとの最低は 70.6%。回ごとの値は全部 `docs/VERIFICATION.md` に書いた |
+| 独立の2回目との一致 | 36 コマで 90.7%（Claude Sonnet）と 91.3%（OpenAI Codex）。頁ごとの最低は 70.6%。回ごとの値は全部 `docs/VERIFICATION.md` に書いた |
 
 ## 人の確認
 
