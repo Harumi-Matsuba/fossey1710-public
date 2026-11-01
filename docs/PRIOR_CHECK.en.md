@@ -24,10 +24,14 @@ here: "Read the cipher sections from the IIIF images".
 | Issues and pull requests of that repository | all 200 (state=all), searched for Fossey, veterinary | nothing |
 | Beinecke catalogue | record 33569870 | "Some sections are completed in a cryptographic code" only; no decipherment |
 | The notebook itself | all 76 images viewed | no contemporary decipherment written in |
+| Tomokiyo's unsolved list (cryptiana.web.fc2.com/code/unsolved.htm) | copy of 28 Oct 2026, 14:22 GMT; searched for Fossey, Beinecke, veterinary, 855 | 0 hits |
+| The same site's blog | titles of the latest 12 posts (4–31 Oct 2026) | nothing about this notebook |
+| Cryptoole (an aggregator of unsolved lists, cryptoole.satoru.net) | all 1,646 entries through its API, searched for Fossey | 1 hit: a mirror of catalogue item 818, status "open" (updated 31 Oct 2026) |
+| GitHub | repository search (Fossey cipher; GEN MSS VOL 855) and code search (Fossey vowel cipher; the cipher words h18df566, p282w49th) | only the catalogue's own repository; the rest are word lists that happen to contain the same strings |
 | Web search | "Thomas Fossey" with veterinary, Beinecke, cipher, 1716 | nothing about this notebook |
 
 ## Where we did not look
 
 - The DECODE database itself; we only quote item 818's note that it is "not on DECODE".
-- Satoshi Tomokiyo's unsolved list and Cryptoole's collection. This is an English household
-  notebook, outside the diplomatic and military scope of those lists, but we did not check.
+- Not finding something is not proof that it does not exist. The table means: as of
+  1 November 2026, no reading of this notebook is visible at these places.

@@ -32,7 +32,7 @@ Daniel Bourdeau の未解決の暗号の目録、項目 **818**
 「Thomas Fossey's notebook of veterinary recipes, sections in a vowel-to-digit cipher」。
 https://github.com/dbourdeau/cyphersolver
 
-先行との関係は `docs/PRIOR_CHECK.md` に書いた。
+先行との関係は `docs/PRIOR_CHECK.md` に書いた（着手前 2026年10月31日、公表前 2026年11月1日）。
 
 ## 語彙の典拠
 
