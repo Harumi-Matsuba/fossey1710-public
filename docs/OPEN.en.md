@@ -1,6 +1,6 @@
 # What is still unresolved
 
-As of 1 November 2026. Of 3,495 cipher symbols, 148 (4.2%, 40 distinct forms) fall in words that do
+As of 1 November 2026. Of 3,494 cipher symbols, 144 (4.1%, 39 distinct forms) fall in words that do
 not read as words. The full list is in `open_tokens.tsv` (image, as written, decoded, symbol count).
 The main ones:
 
