@@ -8,7 +8,7 @@ with digits mixed into the English. This repository records the key and the read
 **the reading of all 36 is published.** Of the 3,490 cipher symbols (occurrences of the digits 1–9),
 3,359 (**96.2%**) fall in words that make sense. That figure includes the thirteen places where the
 digit 9 and the letter g are written alike and the reading that makes a word was taken
-(listed in `data/g9.tsv`); without that step the count is 3,334 of 3,495 (95.4%). What is left is concentrated in Latin drug
+(listed in `data/g9.tsv`); without that step the count is 3,332 of 3,492 (95.4%). What is left is concentrated in Latin drug
 names, personal names, text hidden under pasted slips, and struck-through passages
 (`docs/OPEN.en.md`). In a control of 1,000 shuffled keys, none reached the real key.
 
@@ -73,7 +73,7 @@ The whole text is in `data/transcription/` (as written) and `data/reading/` (dec
 | Images carrying cipher digits | 38 (36 transcribed; the other 2 photograph the same leaves with the pasted slips moved) |
 | Lines transcribed | 625 |
 | Cipher symbols (digit occurrences) | 3,490 (fragments cut off by a pasted slip are not counted) |
-| Symbols in words that make sense | 3,359 (96.2%); 3,334 of 3,495 (95.4%) without the 9/g step |
+| Symbols in words that make sense | 3,359 (96.2%); 3,332 of 3,492 (95.4%) without the 9/g step |
 | Control (1,000 shuffled keys) | 0 reached the real key (real 96.8%, best shuffle 55.9%) |
 | Calibration | none available; no contemporary decipherment or printed edition exists (`docs/METHOD.en.md`) |
 | Agreement with an independent second reading | 90.7% over all 36 images (Claude Sonnet); 91.3% over 35 (OpenAI Codex, the last image still to be taken). The lowest page is 70.6%. Every run's figure is given in `docs/VERIFICATION.en.md` |
