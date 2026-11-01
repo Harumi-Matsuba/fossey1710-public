@@ -19,7 +19,12 @@ other file.
 |---|---|---|---|
 | R1 | OpenAI Codex CLI (gpt-6-astra, reasoning high) | 36 | comparison (below) |
 | R2 | same | 17 (stopped by a usage limit) | comparison (below) |
-| S2 | Anthropic Claude Sonnet | 36 | **the independent second reading** |
+| S2 | Anthropic Claude Sonnet | 36 | **independent second reading, reader A** |
+| R3 | OpenAI Codex CLI (gpt-6-astra, reasoning high) | 35 (image 70 lost to a usage limit) | **independent second reading, reader B** |
+
+Two second readings were taken against the corrected transcription, by readers from different
+families (S2 and R3). Both sets of figures are given below; the lowest is the one the judgement
+rests on.
 
 ## R1 and R2 are a comparison record, not the independent second reading
 
@@ -35,8 +40,8 @@ corrected after checking the letter shapes in the full-size image** (`data/verif
 | 66 | `d3ss46;2`, `d3s46;2d` | `d3ſ4652`, `d3ſ4652d` | "disolue" / "disolued" |
 
 **Once the first reading has been corrected in the light of a comparison, that comparison is no
-longer independent.** R1 and R2 are therefore kept only as a record of agreement, and a fresh run
-(S2) was made against the corrected reading and used as the independent second reading.
+longer independent.** R1 and R2 are therefore kept only as a record of agreement, and fresh runs
+(S2 and R3) were made against the corrected reading and used as the independent second reading.
 
 Agreement of R1 and R2 with the reading as it stood before those corrections (compared on decoded
 values, per page, by edit distance):
@@ -50,10 +55,10 @@ values, per page, by edit distance):
 
 R2 covers only 17 images because the Codex runs hit a usage limit ("try again at 5:25 PM").
 
-## The independent second reading (S2)
+## Independent second reading, reader A (S2, Claude Sonnet)
 
 Anthropic Claude Sonnet read all 36 images against the corrected transcription (its transcriptions
-are in `../second/`, the instruction sheet it was given in `../second/PROMPT.md`). It was run four
+are in `../second/sonnet/`, the instruction sheet it was given in `../second/PROMPT.md`). It was run four
 times, each run given only the images it was to read. The run logs were examined afterwards and
 **no run opened the first transcription, the key, the word lists or the Codex output.**
 
@@ -89,6 +94,34 @@ with each image opened exactly once. In the two runs that redid them, images wer
 times, each after the transcription was already written, and both readers reported that no page had
 been unreadable.
 
+## Independent second reading, reader B (R3, Codex)
+
+The same instruction sheet and the same delivery (one page image per call) were given to the OpenAI
+Codex CLI for the same 36 images (its transcriptions are in `../second/codex/`). Image 70 was lost
+to a Codex usage limit ("try again at 10:33 PM"), so **the 35 images it did return are exactly the
+35 whose reading is published.** The runs were made in a read-only ephemeral sandbox, and the run
+logs were examined: no run used a shell (`command_execution`, 0 occurrences).
+
+| Scope | Characters in reading 1 | Matched | Share |
+|---|---|---|---|
+| The 35 images returned (= the 35 published) | 12,201 | 11,137 | **91.3%** |
+| Lines covered by a pasted slip excluded (same 35) | 12,076 | 11,120 | 92.1% |
+
+Per image the range is 41.5% (image 25) to 99.0% (image 57). **The 41.5% on image 25 is not a
+disagreement about reading.** The upper half of that page is covered by a pasted slip, and Codex
+wrote out only the five lines below the slip, leaving the fragments around it untranscribed. With
+the slip-covered lines excluded, image 25 gives 74.6% and the lowest page becomes image 27 at 70.6%.
+
+### The two readers side by side
+
+| | S2 (Claude Sonnet) | R3 (Codex) |
+|---|---|---|
+| The 35 published images | 90.8% | 91.3% |
+| Slip-covered lines excluded | 90.3% (36 images) | 92.1% (35 images) |
+| All 36 images | 90.3% | (image 70 not returned) |
+
+**The figure the judgement rests on is the lowest of these, 90.3%.**
+
 ## How agreement is counted
 
 Each page of both transcriptions is decoded with the key, reduced to its alphanumeric characters,
@@ -108,4 +141,6 @@ are of the same kind: the period spellings `giue` and `fiue` written as `give` a
 
 **No human has checked this transcription.** Two AI readers agreeing on a letter does not make the
 letter right. Letters that both can misread the same way — above all 9 against g, and 1 against the
-long ſ — remain a real possibility.
+long ſ — remain a real possibility. One of the two second readings (R3) comes from a reader built by
+a different maker than the first, which makes a shared error inherited from the same training that
+much less likely, but not impossible.

@@ -9,7 +9,9 @@ The main ones:
 This is not a recipe but a page of practice writing — names (William, Thomas Fossey), figures, and a
 table of the nine letters. Its columns interleave, and the first reader and the independent second
 reader copied them out in different orders, so they agree on only 69.1% of it; the other 35 images
-run from 76.8% to 98.0%. A page that agrees that poorly does not get its reading published here, so
+run from 76.8% to 98.0%. The other second reader (Codex) hit a usage limit on this one page and
+returned nothing for it, so there is no second figure to set against that one either. A page that
+agrees that poorly does not get its reading published here, so
 only the transcription (`../data/transcription/p70.txt`) is kept and the reading is treated as
 unresolved.
 

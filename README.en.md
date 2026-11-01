@@ -78,7 +78,7 @@ The whole text is in `data/transcription/` (as written) and `data/reading/` (dec
 | Symbols in words that make sense | 3,359 (96.2%); 3,334 of 3,495 (95.4%) without the 9/g step |
 | Control (1,000 shuffled keys) | 0 reached the real key (real 96.8%, best shuffle 55.9%) |
 | Calibration | none available; no contemporary decipherment or printed edition exists (`docs/METHOD.en.md`) |
-| Agreement with an independent second reading | 90.3% over 36 images, 90.8% over the 35 whose reading is published (69.1–98.0% per image); see `docs/VERIFICATION.en.md` |
+| Agreement with an independent second reading | Taken twice, by two readers: 90.8% (Claude Sonnet) and 91.3% (OpenAI Codex) over the 35 images whose reading is published. The lowest figure, the one the judgement rests on, is 90.3% over all 36; see `docs/VERIFICATION.en.md` |
 | The 35 published images alone | 3,339 of 3,458 symbols (96.6%) in words that make sense; 3,314 of 3,463 (95.7%) without the 9/g step |
 
 ## Human checking
