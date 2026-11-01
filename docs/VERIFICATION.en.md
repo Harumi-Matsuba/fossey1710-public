@@ -74,9 +74,13 @@ lowest is 76.8% (image 51).
 ### The pages that agree least
 
 - **Image 70 (69.1%): its reading is not published.** It is not a recipe but a page of practice
-  scribbles — names, figures, a table of letters — written in columns that the two readers copied
-  out in different orders. The reading is withheld and listed in `OPEN.en.md`; the transcription
-  stays in `../data/transcription/p70.txt`.
+  scribbles — names, figures, a table of letters. The low figure is not an artefact of reading
+  order: permuting the blocks every possible way gives 69.9%, ignoring line order gives 69.9%, and
+  **the two readers that never saw the first reading agree with each other on only 72.5%.** This
+  one page was also read by a third model from a different maker again (Fable,
+  `../second/fable/f70.txt`), which agrees with the first reading on 65.1% (70.6% ignoring order) —
+  still below the bar. The reading is withheld and listed in `OPEN.en.md`; the transcription stays
+  in `../data/transcription/p70.txt`.
 - **Image 31 (69.9%): its reading is published.** This page carries a note written vertically in the
   left margin. The first transcription puts it last, the second puts it first. **That is a
   difference of placement, not of reading**: align the marginal block and the same comparison gives
@@ -129,6 +133,18 @@ and the two strings are aligned by edit distance; the matched characters are div
 of the first reading. Lines are not paired up beforehand. Because the comparison is on decoded
 values, two names for one letter (9 and g, which the key sends to the same value) count as
 agreement.
+
+Every figure given here can be recomputed from the files in this repository:
+
+```
+python3 src/agreement.py second/sonnet      # 90.3% over 36 images
+python3 src/agreement.py second/codex       # 91.3% over 35 images
+python3 src/agreement.py second/fable p70   # 65.1%, image 70 alone
+```
+
+The script prints both the figure that keeps the written order and the figure that ignores line
+order. On ordinary pages the two are nearly the same; they part only where the page is laid out in
+interleaving columns.
 
 ## What the disagreements are
 

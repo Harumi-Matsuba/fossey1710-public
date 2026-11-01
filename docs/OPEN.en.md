@@ -7,13 +7,31 @@ The main ones:
 ## 0. The one page whose reading is not published: image 70
 
 This is not a recipe but a page of practice writing — names (William, Thomas Fossey), figures, and a
-table of the nine letters. Its columns interleave, and the first reader and the independent second
-reader copied them out in different orders, so they agree on only 69.1% of it; the other 35 images
-run from 76.8% to 98.0%. The other second reader (Codex) hit a usage limit on this one page and
-returned nothing for it, so there is no second figure to set against that one either. A page that
-agrees that poorly does not get its reading published here, so
-only the transcription (`../data/transcription/p70.txt`) is kept and the reading is treated as
-unresolved.
+table of the nine letters. The first reading and the independent second reading (Claude Sonnet)
+agree on only 69.1% of it; the other 35 images run from 76.8% to 98.0%.
+
+**The cause is not that the two readers wrote the columns down in different orders; it is that the
+page itself cannot be read reliably.** Three measurements show this.
+
+1. Permuting the blocks of the first reading every possible way and keeping the best order raises
+   the figure only from 69.1% to 69.9%.
+2. Ignoring line order altogether (pairing each line of the first reading one-to-one with its best
+   match in the second) gives 69.9% as well.
+3. **Set the two readers that never saw the first reading against each other, and they agree on
+   only 72.5%.** This page carries almost no running text for the readings to brace each other
+   against — only bare strings of digits and a table of single letters — so a different reader
+   produces different characters.
+
+This one page was also given to a third model, by a maker different from both the first reader
+(Opus) and the second (Sonnet) — `../second/fable/f70.txt`. It agrees with the first reading on
+65.1% (70.6% ignoring order), again below the bar. Codex hit a usage limit on this one image and
+returned nothing for it.
+
+A page that agrees that poorly does not get its reading published here, so only the transcription
+(`../data/transcription/p70.txt`) is kept and the reading is treated as unresolved. The first
+transcription has not been corrected either: correcting it would cost the two second readings their
+independence for this page. For the record, the second row of the letter table is written
+`a e u e a` in the first reading and `a o 4 e a` by both of the other readers.
 
 The page does carry two things that support the key: 55366317 (uuilliam = William), and a table
 reading a l m n r / a e u e a / … Its sum under "Receved of eight men" does not balance: the figures
