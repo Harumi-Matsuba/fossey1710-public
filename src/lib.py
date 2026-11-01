@@ -64,7 +64,7 @@ def tokens(line):
 def page_tokens(path):
     """頁のファイルから、行またぎの語をつないだ符号の並びを返す（(行番号, 符号) の列）。"""
     ls=[l for l in open(path) if not l.startswith('#')]
-    out=[]
+    out=[]; SKIP=set()
     for i,l in enumerate(ls):
         toks=tokens(l)
         # 同じ行で、語が2つに分かれて書かれている所（例「19771 83ck」＝armmaniack）はつなぐ
@@ -77,9 +77,13 @@ def page_tokens(path):
                 merged.append(toks[j]); j+=1
         toks=merged
         nxt=tokens(ls[i+1]) if i+1<len(ls) else []
-        if toks and nxt and not is_word(decode(toks[-1])) and is_word(decode(toks[-1]+nxt[0])):
+        if toks and nxt and is_word(decode(toks[-1]+nxt[0])) and (
+                not is_word(decode(toks[-1])) or not is_word(decode(nxt[0]))):
             toks=toks[:-1]+[toks[-1]+nxt[0]]
-        for t in toks: out.append((i,t))
+            SKIP.add((i+1,nxt[0]))
+        for t in toks:
+            if (i,t) in SKIP: continue
+            out.append((i,t))
     return out
 
 def bad_tokens(path):

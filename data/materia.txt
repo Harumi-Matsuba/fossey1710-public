@@ -40,7 +40,6 @@ fetherfue	[N] コマ60で字を確認。featherfew（feverfew）の綴り
 boalamery	[N] コマ19で字を確認（B4161729y）。bole armery（bole armeniac）を1語に書いたもの
 armmaniack	[N] コマ34で字を確認（B462 19771 83ck＝Bole armmaniack）
 diapentue	[N] コマ61で字を確認（D31p28t52）。Diapente の綴り。同じ手帳に Diapenty・Diapentis もある
-macherye	[N] コマ32（71ch29y2）。水銀剤 mercury とみられるが未確定
 bolarmery	[N] コマ19で字を確認（B4619729y）。bole armery を1語に書いたもの
 terpentine	[N] コマ19で字を確認（T29p28t382）。turpentine の綴り。ほかに Turpetine
 eldern	[M] elder（ニワトコ）の当時の名
@@ -99,3 +98,11 @@ berreys	[N] コマ59（b2992ys）。berries の綴り
 iunepur	[N] コマ59で字を確認（3582p59）。Juniper の綴り
 aproued	[N] コマ23（1p9452d）。approved の綴り。手帳の平文に approved
 mulenders	[M] mallenders（馬の後膝の皮膚病）の異綴り。コマ55で字を確認
+olom	[N] コマ57・54で字を確認（4647）。alum（明礬）の綴り。コマ54は burnt olom
+sume	[N] コマ57で字を確認（s572）。some の綴り
+terpetine	[N] コマ57（T29p2t382）。turpentine の綴り
+luue	[N] コマ61（6552）。同じ処方の見出しが平文で Lowe と書いており、その暗号の綴り
+dammag	[N] コマ21（d1771g）。damage の綴り
+trof	[N] コマ66で字を確認（t94f）。trough（水槽）の綴り
+sutt	[N] コマ66で字を確認（C462 s5tt＝Cole sutt、石炭の煤）
+bayberies	[N] コマ47で字を確認（B1yb2932s）。bayberries の綴り
