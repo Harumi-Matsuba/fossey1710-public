@@ -5,10 +5,10 @@ A notebook of farm and veterinary remedies in which parts of the recipes are wri
 with digits mixed into the English. This repository records the key and the reading.
 
 **Status: a partial reading.** All 38 images that carry cipher digits have been transcribed
-and read with the key. Of the 3,494 cipher symbols (occurrences of the digits 1–9),
-3,350 (**95.9%**) fall in words that make sense. That figure includes the eight places where the
+and read with the key. Of the 3,490 cipher symbols (occurrences of the digits 1–9),
+3,359 (**96.2%**) fall in words that make sense. That figure includes the thirteen places where the
 digit 9 and the letter g are written alike and the reading that makes a word was taken
-(listed in `data/g9.tsv`); without that step the count is 3,320 (95.0%). What is left is concentrated in Latin drug
+(listed in `data/g9.tsv`); without that step the count is 3,334 of 3,495 (95.4%). What is left is concentrated in Latin drug
 names, personal names, text hidden under pasted slips, and struck-through passages
 (`docs/OPEN.en.md`). In a control of 1,000 shuffled keys, none reached the real key.
 
@@ -72,9 +72,9 @@ The whole text is in `data/transcription/` (as written) and `data/reading/` (dec
 |---|---|
 | Images carrying cipher digits | 38 (36 transcribed; the other 2 photograph the same leaves with the pasted slips moved) |
 | Lines transcribed | 625 |
-| Cipher symbols (digit occurrences) | 3,494 (fragments cut off by a pasted slip are not counted) |
-| Symbols in words that make sense | 3,350 (95.9%); 3,320 (95.0%) without the 9/g step |
-| Control (1,000 shuffled keys) | 0 reached the real key (real 96.4%, best shuffle 55.9%) |
+| Cipher symbols (digit occurrences) | 3,490 (fragments cut off by a pasted slip are not counted) |
+| Symbols in words that make sense | 3,359 (96.2%); 3,334 of 3,495 (95.4%) without the 9/g step |
+| Control (1,000 shuffled keys) | 0 reached the real key (real 96.8%, best shuffle 55.9%) |
 | Calibration | none available; no contemporary decipherment or printed edition exists (`docs/METHOD.en.md`) |
 | Agreement with an independent second reading | `docs/VERIFICATION.en.md` |
 

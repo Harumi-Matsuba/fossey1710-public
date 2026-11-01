@@ -1,4 +1,4 @@
-暗号の記号 3494、語として通る 3350（95.9%）
+暗号の記号 3490、語として通る 3359（96.2%）
 9	71sh7464555	mashmolouuu
 9	S13t1664553	Saitallouui
 9	Esk253ty	Eskeuity
@@ -23,4 +23,4 @@
 3	s59g5t	surgut
 3	b95ſ2d	bruſed
 3	982	rne
-3	d3ss46	dissol
+2	68	ln

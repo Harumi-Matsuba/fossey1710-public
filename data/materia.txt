@@ -106,3 +106,4 @@ dammag	[N] コマ21（d1771g）。damage の綴り
 trof	[N] コマ66で字を確認（t94f）。trough（水槽）の綴り
 sutt	[N] コマ66で字を確認（C462 s5tt＝Cole sutt、石炭の煤）
 bayberies	[N] コマ47で字を確認（B1yb2932s）。bayberries の綴り
+femetary	[N] コマ45で字を確認（F272tary）。fumitory（カラクサケマン）の当時の綴り。薬草の並びの中
