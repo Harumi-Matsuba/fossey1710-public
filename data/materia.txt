@@ -68,3 +68,34 @@ warter	[N] 平文の頁（コマ65・66）に同じ綴り。water
 peneuuorth	[N] pennyworth の綴り
 fenel	[N] コマ60。fennel の綴り
 sage	[N] コマ54で字を確認（S1g2）
+seam	[N] コマ57で字を確認（s217）。豚の脂（当時の獣医書の fresh seam）
+# 以下は、当時の薬として実在することをウェブ検索で確かめたもの（2026-11-01）
+# diapente：初期近代の馬の手引きに「half an ounce of the powder of Diapente」とある（Linguistic DNA の用例）
+# crocus metallorum：アンチモンと硝石の製剤。1823年の Encyclopaedia Britannica に記載
+# コマ6は名前の練習書き。暗号で書かれた人名（Fossey 一族と近隣の名）
+fossey	[N] コマ6「F4 ſ2y」。手帳の平文の署名 Tho: Fossey と同じ
+uuilliam	[N] コマ6「55366317」。William（uu＝w）
+eduuard	[N] コマ6「2d5519d」。Edward
+daniel	[N] コマ6「D18326」。Daniel
+iohn	[N] コマ6「34h8」。John の当時の綴り
+norris	[N] コマ6「84993s」。姓 Norris
+uuelch	[N] コマ6「5526ch」。姓 Welch
+suannah	[N] コマ6「S51881h」。女性名 Susannah/Savannah とみられる
+exeter	[M] oyl of Exeter（当時の馬の塗り薬の名）。コマ40「4y6 of 2x2t29」
+sheperds	[N] コマ45で字を確認（Sh2p29ds p45ch＝shepherd's purse/pouch）
+berdocks	[N] コマ49で字を確認（B29d4cks）。burdocks の綴り
+camamile	[N] コマ49で字を確認（C171362）。camomile の綴り
+uerty	[N] コマ49で字を確認（529ty）。virtue（薬効）の綴り
+eldern	[N] コマ49で字を確認（26d298）。elder（ニワトコ）
+hemlock	[N] コマ49（h2764ck）
+amoery	[N] コマ54で字を確認（B462 17429y）。コマ25・31 の amory と同じ薬（bole armeniac）
+mashmalouue	[N] コマ27で字を確認（71sh716＋次行 4552）。marshmallow の綴り
+mursturdseed	[N] コマ62で字を確認（759st59ds22d）。mustard seed の綴り
+armmanick	[N] コマ34（B462 19771 83ck）。bole armenick。手帳の平文（コマ63）に Bole Americk
+mettelorum	[N] コマ61で字を確認（72tt264957）。Crocus Metallorum の第2語
+metelorum	[N] コマ56（72t26＋4957）。Crocus Metallorum の第2語。コマ61 では mettelorum
+iuneper	[N] コマ59で字を確認（3582p59）。Juniper の綴り（I＝J）
+berreys	[N] コマ59（b2992ys）。berries の綴り
+iunepur	[N] コマ59で字を確認（3582p59）。Juniper の綴り
+aproued	[N] コマ23（1p9452d）。approved の綴り。手帳の平文に approved
+mulenders	[M] mallenders（馬の後膝の皮膚病）の異綴り。コマ55で字を確認

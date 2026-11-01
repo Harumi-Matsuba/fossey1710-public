@@ -1,6 +1,6 @@
 # What is still unresolved
 
-As of 1 November 2026. Of 3,522 cipher symbols, 310 (8.8%) fall in words that do not read as words.
+As of 1 November 2026. Of 3,504 cipher symbols, 174 (5.0%) fall in words that do not read as words; the full list is in `open_tokens.tsv`.
 They fall into these groups.
 
 ## 1. Names of drugs and preparations (Latin or dialect names, in no dictionary or period word list)

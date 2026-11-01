@@ -1,8 +1,8 @@
 # 練習書き・覚え書きの頁。処方ではない。
 William
 William
-{.uuillii a}
-{.uui lli am}
+{.uuilliam}
+{.uuillia m}
 {aaumiele o}  # 読み取れず（?）
 io u
 ln i l

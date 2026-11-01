@@ -4,11 +4,15 @@ KEY={'1':'a','2':'e','3':'i','4':'o','5':'u','6':'l','7':'m','8':'n','9':'r'}
 WORDS=set(w.strip().lower() for w in open('/usr/share/dict/words'))
 WORDS|=set(w.strip().lower() for w in open('/usr/share/dict/propernames'))
 # 当時の薬・処方でよく出る語と綴り（手帳の平文の頁に出るもの）
-import os
-_DATA=os.path.join(os.path.dirname(os.path.abspath(__file__)),'..','data')
 try:
-    WORDS|=set(w.strip().lower() for w in open(os.path.join(_DATA,'plain_vocab.txt')) if w.strip())
-    WORDS|=set(l.split('\t')[0].strip().lower() for l in open(os.path.join(_DATA,'materia.txt')) if l.strip() and not l.startswith('#'))
+    import os
+    _here=os.path.dirname(os.path.abspath(__file__))
+    for _d in (_here, os.path.join(_here,'..','data')):
+        try:
+            WORDS|=set(w.strip().lower() for w in open(os.path.join(_d,'plain_vocab.txt')) if w.strip())
+            WORDS|=set(l.split('\t')[0].strip().lower() for l in open(os.path.join(_d,'materia.txt')) if l.strip() and not l.startswith('#'))
+        except FileNotFoundError:
+            pass
 except FileNotFoundError:
     pass
 WORDS|=set('''ye yt wth oz pint pints quart quarts handfull handfulls spoonfull spoonfulls
@@ -37,6 +41,7 @@ def variants(w):
                re.sub(r'e$','',s)+'ed'}
     return more
 def is_word(w):
+    w=w.replace('ſ','s').replace('ʃ','s')   # 長い s は文字の s
     w=re.sub(r"[^A-Za-z]","",w)
     if len(w)<=1: return w.lower() in ('a','i','o')
     return any(v in WORDS for v in variants(w))
@@ -48,4 +53,35 @@ def strip_marks(line):
     line=re.sub(r'[{}]','',line)
     return line
 def tokens(line):
-    return [t for t in re.split(r"[^A-Za-z0-9'ſ]+", strip_marks(line)) if t]
+    # 「…」の付いた符号は、貼り紙で切れた断片。語にならないのが当たり前なので数えない。
+    out=[]
+    for t in re.split(r"[^A-Za-z0-9'ſ…]+", strip_marks(line)):
+        if not t or '…' in t: continue
+        out.append(t)
+    return out
+
+
+def page_tokens(path):
+    """頁のファイルから、行またぎの語をつないだ符号の並びを返す（(行番号, 符号) の列）。"""
+    ls=[l for l in open(path) if not l.startswith('#')]
+    out=[]
+    for i,l in enumerate(ls):
+        toks=tokens(l)
+        # 同じ行で、語が2つに分かれて書かれている所（例「19771 83ck」＝armmaniack）はつなぐ
+        j=0; merged=[]
+        while j<len(toks):
+            if (j+1<len(toks) and not is_word(decode(toks[j]))
+                    and is_word(decode(toks[j]+toks[j+1]))):
+                merged.append(toks[j]+toks[j+1]); j+=2
+            else:
+                merged.append(toks[j]); j+=1
+        toks=merged
+        nxt=tokens(ls[i+1]) if i+1<len(ls) else []
+        if toks and nxt and not is_word(decode(toks[-1])) and is_word(decode(toks[-1]+nxt[0])):
+            toks=toks[:-1]+[toks[-1]+nxt[0]]
+        for t in toks: out.append((i,t))
+    return out
+
+def bad_tokens(path):
+    return [(i,t) for i,t in page_tokens(path)
+            if any(c.isdigit() for c in t) and not is_word(decode(t))]

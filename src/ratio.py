@@ -4,13 +4,8 @@ import sys, lib
 # 行またぎの語（行末と次行の頭がつながる）を、つないだ形で数える
 tot=ok=0; bad={}
 for f in sys.argv[1:]:
-    ls=[l for l in open(f) if not l.startswith('#')]
-    for i,l in enumerate(ls):
-        toks=lib.tokens(l)
-        nxt=lib.tokens(ls[i+1]) if i+1<len(ls) else []
-        if toks and nxt and not lib.is_word(lib.decode(toks[-1])) and lib.is_word(lib.decode(toks[-1]+nxt[0])):
-            toks=toks[:-1]+[toks[-1]+nxt[0]]
-        for t in toks:
+    for _i,t in lib.page_tokens(f):
+        if True:
             n=sum(c.isdigit() for c in t)
             if not n: continue
             tot+=n
